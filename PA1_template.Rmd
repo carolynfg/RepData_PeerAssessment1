@@ -1,3 +1,8 @@
+---
+output: 
+  html_document: 
+    keep_md: yes
+---
 #My Reproducible Research Peer Assessment 1
 #CM
 
@@ -143,4 +148,5 @@ g<- ggplot(report_activity, aes(interval,steps,activity))
 g <-g+ geom_line(stat = 'identity', aes(color='Day')) + facet_grid(Day~.)
 g+ labs(x= '5 mins Interval', y = "Average of Steps") + ggtitle("The dataset with “weekday” and “weekend”")
 ```
+
 
